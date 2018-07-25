@@ -18,7 +18,7 @@
           {{ total_comments }} comment{{ total_comments|pluralize }}
       </h2>
   {% endwith %}
-{% endblock %}
+
 {% for comment in comments %}
   <div class="comment">
     <p class="info">
@@ -40,3 +40,4 @@
     <p><input type="submit" value="Add comment"></p>
   </form>
 {% endif %}
+{% endblock %}
